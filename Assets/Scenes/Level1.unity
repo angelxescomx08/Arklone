@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 1414490417}
   - component: {fileID: 1414490416}
   - component: {fileID: 1414490415}
+  - component: {fileID: 1414490419}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -490,8 +491,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: a50fb9a58b009444584d9922ece9013a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -597,13 +598,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414490414}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.46, y: 0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2092006764}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1414490419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414490414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0af466e5f9d314a9f928a08910d62c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 175, y: 300}
 --- !u!1 &1752925144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,7 +1053,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1414490418}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2092006765
@@ -1089,7 +1104,6 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 170978634}
   - {fileID: 2092006764}
-  - {fileID: 1414490418}
   - {fileID: 1842507643}
   - {fileID: 1752925148}
   - {fileID: 763327010}
