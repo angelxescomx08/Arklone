@@ -16,6 +16,7 @@ public class BallCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Block"))
         {
             Destroy(collision.gameObject);
+            gameManager.DecreaseBlocks();
         }
     }
 
